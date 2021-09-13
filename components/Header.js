@@ -36,7 +36,7 @@ function Header({ placeholder }) {
 
   const onSearch = () => {
     router.push({
-      pathname: "/search",
+      pathname: "/search.js",
       query: {
         location: searchInput,
         startDate: startDate.toISOString(),
