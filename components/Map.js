@@ -11,6 +11,7 @@ function Map({ searchResults }) {
       latitude: result.lat,
     };
   });
+
   const center = getCenter(coordinates);
   const [viewport, setViewport] = useState({
     latitude: center.latitude,
