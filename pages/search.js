@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import { useRouter } from "next/dist/client/router";
 import { format } from "date-fns";
 import InfoCard from "../components/InfoCard";
+import Map from "../components/Map";
 
 function search({ searchResults }) {
   const router = useRouter();
@@ -34,6 +35,9 @@ function search({ searchResults }) {
               return <InfoCard key={item.img} {...item} />;
             })}
           </div>
+        </section>
+        <section className="hidden xl:inline-flex xl:min-w-[600px]">
+          <Map />
         </section>
       </main>
       <Footer />
